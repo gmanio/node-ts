@@ -1,0 +1,25 @@
+{
+  "name": "node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc -w",
+    "build": "tsc",
+    "node": "node dist/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmanio/node-ts.git"
+  },
+  "author": "GmanPark",
+  "license": "MIT",
+  "bugs": {
+    "url": "http://git.gman.io/node-ts/issues"
+  },
+  "homepage": "http://git.gman.io/node-ts#readme",
+  "dependencies": {
+    "@types/node": "^8.0.50",
+    "typescript": "^2.6.1"
+  }
+}
