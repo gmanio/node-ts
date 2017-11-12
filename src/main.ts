@@ -1,3 +1,13 @@
-import * as http from 'http';
+import * as express from "express";
 
-console.dir(http);
+const app = express();
+
+app.enable('trust proxy');
+
+app.use((req, res, next) => {
+  res.send('Hello World');
+});
+
+app.listen(4200, () => {
+  console.log('Ready');
+});
