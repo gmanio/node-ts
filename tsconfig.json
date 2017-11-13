@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["es2015"],
+    "lib": [
+      "es2015"
+    ],
     "outDir": "dist",
     "module": "commonjs",
     "declaration": true,
@@ -13,7 +15,11 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "inlineSources": true,
-    "types": ["node"]
+    "types": [
+      "node",
+      "express",
+      "puppeteer"
+    ]
   },
   "include": [
     "src/**/*"
