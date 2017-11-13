@@ -5,14 +5,11 @@ const app = express();
 
 app.enable('trust proxy');
 
-app.use((req, res, next) => {
-  res.send('Hello World');
-  next();
-});
 
 app.get('/', (req, res) => {
   const parser = new Parser();
   parser.excute();
+  res.send('Puppeteer');
 })
 
 app.listen(4200, () => {
