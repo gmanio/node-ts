@@ -7,29 +7,29 @@ const sequelize = new Sequelize(
 
 sequelize.define('employee', {
   emp_no: {
-    type: Sequelize.INTEGER,
-    primaryKey: true
+    type: Sequelize.INTEGER(11),
+    primaryKey: false
   },
   birth_date: {
     type: Sequelize.DATE,
-    allowNull: true
+    allowNull: false
   },
   hire_date: {
     type: Sequelize.DATE,
-    allowNull: true
+    allowNull: false
   },
   first_name: {
-    type: Sequelize.TEXT,
-    allowNull: true
+    type: Sequelize.STRING(14),
+    allowNull: false
   },
   last_name: {
-    type: Sequelize.TEXT,
-    allowNull: true
+    type: Sequelize.STRING(16),
+    allowNull: false
   },
   gender: {
     type: Sequelize.ENUM(),
     values: ['M', 'F'],
-    allowNull: true
+    allowNull: false
   }
 }, {
   classMethods: {},
@@ -38,6 +38,8 @@ sequelize.define('employee', {
   underscored: true,
   timestamps: false
 });
+
+// sequelize.model('employee');
 
 export { sequelize };
 

@@ -31,6 +31,7 @@
     "@nguniversal/express-engine": "^5.0.0-beta.5",
     "express": "^4.16.2",
     "express-graphql": "^0.6.11",
+    "graphql": "^0.11.7",
     "mysql2": "^1.5.1",
     "sequelize": "^4.22.8",
     "typescript": "^2.6.1"
